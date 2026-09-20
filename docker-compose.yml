@@ -1,0 +1,10 @@
+name: brand-ms
+services:
+  nginx:
+    container_name: nginx
+    image: nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      # - /etc/letsencrypt:/etc/letsencrypt:ro      
+    ports:
+      - "8000:80"
